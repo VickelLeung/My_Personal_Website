@@ -1,0 +1,442 @@
+<DOCTYPE html>
+	
+<html lang= "en">
+	<head>
+		<meta charset = "utf-8">
+		<title>
+			Vickel's website
+		</title>
+		<link rel ="stylesheet" type ="text/css" href ="style.css">
+		<link rel="shortcut icon" href="/favicon.ico"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+		//for scroll up botton
+		window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			        document.getElementById("btnUp").style.display = "block";
+			    } else {
+			        document.getElementById("btnUp").style.display = "none";
+			    }
+			}
+
+			$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("#btnUp").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 2200, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+
+		//end of scroll up
+
+		//for contact page
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("#idContact").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 2200, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+
+
+		//for preloader - add class	
+		$(document).ready(function() {
+			
+			setTimeout(function(){
+				$('body').addClass('loaded');
+			}, 100);
+			
+		});
+
+	</script>
+	</head>
+	
+<body>
+
+	<div id="up"><a href="up"></a></div>
+	<ul class ="nav">
+
+	<!-- ======================== Preloader ======================= -->
+	<div id="loader-wrapper">
+			<p> Loading...</p>
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+	</div>
+
+		<li> <a class ="btn" id = "btnProject" href ="project.html"> Project</a> </li>
+		<li> <a class ="btn" id = "btnPersonal" href ="AboutMe.html"> About Me</a> </li>
+		<li> <a class ="btn" id = "btnTeach" href ="teaching.html"> Teaching materials</a> </li>
+		<li> <a class ="btn" id = "idContact" href ="#bottom"> Hire me!</a> </li>
+	
+	</ul>
+
+	 <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+	<div id ="starBg">
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+	</div>
+
+
+	<!-- ============= start of main part==================== -->
+	
+	<div class ="titleText">
+		<h5>Vickel Leung</h5>
+		<!-- <small>Web & android developer <small> -->
+		<p >web & android developer</p>
+
+			<div class ="linkToMedia">
+				<a href="https://github.com/VickelLeung">
+					<img src = "https://s33.postimg.org/7shohmrhb/rsz_151336527737822.png">
+				</a> 
+				<a href="https://www.linkedin.com/in/vickelLeung">
+					<img src = "https://s33.postimg.org/pvar990b3/rsz_eqphkclfwfhwvdobwlce.png">
+				</a> 
+			</div>
+	</div>
+
+	<div class = "png1">
+	
+		<div class ="ptext">
+			<span class = "border">
+				<h2>
+					<p>
+					Life is like riding a bicycle. To keep your balance you must keep moving.
+					<br><br>– Albert Einstein
+					</p>
+				</h2>
+				<a class ="btn" href="AboutMe.html">Click to know me!</a>
+			</span>
+		</div>
+	</div>
+		
+	<div class ="content">		
+			<div class ="projectDiv">
+			
+				<div class ="projectBox">
+					<p class ="titleFont">My Projects
+						<h6>
+							(Click on <img src ="https://s9.postimg.org/ze1dkrd7z/project_Github.png")> for source code)
+						</h6> 
+					</p>
+
+
+						<div class ="project1"> 
+							<div class ="projectTitle">
+							 <h3>
+							 	Battleship 
+							 		<a href="https://github.com/VickelLeung/Battleship-School-project-">
+										<img src = "https://s9.postimg.org/ze1dkrd7z/project_Github.png">
+									</a>  
+							 </h3>
+
+							 </div>
+							 <div class="projectDescription">
+							A game of battleship where each player take turn firing a rocket to sink the opponent ship. The game was implemented using java, and it ran on the console.
+							</div>
+							 <br >
+
+							 <div class ="projectImg">
+							 	<img src ="https://s9.postimg.org/jnkw4k6e7/Battle_Ship_Img.png">
+							</div>
+
+							 <div class ="projectType">
+								<span class ="schoolColor">(School project)</span> - Dec 2017
+
+								 <div class ="linkToProject">
+
+								 </div>
+							 </div>
+
+						</div>
+
+
+						<div class ="project2">
+
+							<div class ="projectTitle">
+							 	<h3>
+							 	TicTacToe
+								 	<a href="https://github.com/VickelLeung/Battleship-School-project-">
+											<img src = "https://s9.postimg.org/ze1dkrd7z/project_Github.png">
+									</a>  
+								</h3> 
+							</div>
+
+							<div class="projectDescription">
+								A simple tictactoe game made with android studio. There is two game wich are player vs player and player vs computer. The AI prevent the player from winning, the best case is a draw.
+								 <br >
+							</div>
+
+							<div class ="projectImg">
+							
+							</div>
+
+							 <div class ="projectType">
+							 	<span class ="personalColor">(Personal project)</span> - Jan 2018
+							 </div>
+
+							 <div class ="linkToProject">
+							 	
+							 </div>
+
+						</div>
+
+						<div class ="project3"> 
+
+							<div class ="projectTitle">
+							 	<h3>
+							 		Apartment Search(School project)
+							 			<a href="https://github.com/VickelLeung/apartment-search">
+											<img src = "https://s9.postimg.org/ze1dkrd7z/project_Github.png">
+										</a>  
+							 	 </h3> 
+							</div>
+							<div class="projectDescription">
+							 A website that allow client to search for appartment. The website is made of html, css, javascript and php.
+							</div>
+							<br >
+
+							<div class ="projectImg">
+								<img src ="https://s9.postimg.org/tkvwxtocf/aoo.png">
+							</div>
+
+
+							 <div class ="projectType">
+							 	<span class ="schoolColor">(School project)</span> - Dec 2017
+							 </div>
+
+							 <div class ="linkToProject">
+
+							 </div>
+
+						</div>
+
+						<div class ="project4"> 
+
+							<div class ="projectTitle">
+							 	<h3>
+							 		Hangman 
+							 			<a href="https://github.com/VickelLeung/Battleship-School-project-">
+											<img src = "https://s9.postimg.org/ze1dkrd7z/project_Github.png">
+										</a>  
+							 	</h3> 
+							</div>
+							<div class="projectDescription">
+								A game of hangman made using android studio. User will take turn guessing a charater or sentence. Each wrong guess will result a man getting drawn. The game is made off android studio and it used file input to get random words.
+							</div>
+							<br >
+
+							<div class ="projectImg">
+								
+							</div>
+
+
+							 <div class ="projectType">
+							 	<span class ="personalColor">(Personal project)</span> - Jan 2018
+							 </div>
+
+							 <div class ="linkToProject">
+
+							 </div>
+
+						 </div>
+
+						<div class ="project5"> 
+
+							<div class ="projectTitle">
+							 	<h3>
+							 		Risk 
+							 			<a href="https://github.com/VickelLeung/Risk-game">
+											<img src = "https://s9.postimg.org/ze1dkrd7z/project_Github.png">
+										</a>  
+							 	</h3> 
+							</div>
+							<div class="projectDescription">
+							A game made out of pure C++ which is run on the console. The project was done in with 4 teamate. Design pattern was used during the creation of this game.
+							</div>
+							<br >
+
+							<div class ="projectImg">
+								
+							</div>
+
+
+							 <div class ="projectType">
+							 	<span class ="schoolColor">(School project)</span> - Dec 2017
+							 </div>
+
+							 <div class ="linkToProject">
+
+							 </div>
+						</div>
+
+
+						<div class ="project6"> 
+
+							<div class ="projectTitle">
+							 	<h3> 
+							 		Refugee Camp - Web applicaiton storing information
+							 		<a href="https://github.com/VickelLeung/PixelPenguins">
+										<img src = "https://s9.postimg.org/ze1dkrd7z/project_Github.png">
+									</a>  
+							 	</h3> 
+							</div>
+							<div class="projectDescription">
+								A web application made with a team of 6 person. The main goal of the web application is to stored information fast and easy.
+							</div>
+							<br >
+
+							<div class ="projectImg">
+							<!-- image size 350 X 215 -->
+								<img src ="https://s13.postimg.org/x1c4a861z/Webp.net-resizeimage_1.png">
+							</div>
+
+							 <div class ="projectType">
+							 	<span class ="personalColor">(hackathon project)</span> - Nov 2017
+							 </div>
+
+						</div>
+
+						<!-- <a class ="btn" href = "project.html">Click here for more projects</a> -->
+				</div>		
+			</div>
+			
+			<br >
+			<div class ="teachPostDiv">
+
+				<div class ="teachPostBox">
+					<span class ="titleFont">Teachings post</span>
+					<!-- <h2>Teaching post</h2>
+					<p>
+					 random word okay....
+					</p> -->
+				</div>
+			</div>
+			
+	<!-- <div> -->
+	
+
+		<div class ="contactDiv">	
+		<div id="bottom"><a href="bottom"></a></div>
+			<span class ="titleFont">How to contact me</span>
+
+				<div class= "infoContact">
+						
+					<div class ="whoIam">
+						<div class ="myDescription">
+							Hello there, my name is Vickel Leung. I am a young aspiring programmer that love to learn anything about technology. I also love to teach people all the knowledge I have because knowledge is power! If you are looking for someone that is hardworking, responsible, and self-motivated. Then look no further because I am your man!
+						</div>
+						<br >
+
+						<a href= "test.txt" download = "Vickel's CV"> Download my resume </a>
+
+					</div>
+
+					<div class ="contactMe">
+						
+							<div class= "myEmail">
+							<!-- put an image -->
+								<img src ="https://s9.postimg.org/uxlvoi03z/mail-black-envelope-symbol.png">
+								<span >Vickel1993@hotmail.com</span>
+							</div>
+							<div class ="myNumber">
+								<img src ="https://s9.postimg.org/wdxe6ban3/telephone.png">
+								<span>(514)-815-8638</span>
+							</div>
+
+							<div class ="myLocation">
+								<img src ="https://s9.postimg.org/rs19y0u9r/facebook-placeholder-for-locate-places-on-maps.png">
+								<span>Laprairie, Quebec, Canada</span>
+							</div>
+
+							<br >
+							<div class ="linkToMedia">
+								<a href="https://github.com/VickelLeung">
+									<img src = "https://s33.postimg.org/7shohmrhb/rsz_151336527737822.png">
+								</a> 
+								<a href="https://www.linkedin.com/in/vickelLeung">
+									<img src = "https://s33.postimg.org/pvar990b3/rsz_eqphkclfwfhwvdobwlce.png">
+								</a> 
+
+							</div>
+						</div>
+						
+				</div>
+
+			<div class = "messageContact">
+					<span>Got a message, comment or feedback?</span>
+					<div class="contactForm">
+						<form action="/action_page.php">
+						  	<label for="fname"></label>
+	    					<input type="text" id="name" name="name" placeholder="Enter your name">
+	    					<br >
+	    					<label for="fphoneNumber"></label>
+	    					<input type="number" id="phoneNumber" name="phone" placeholder="(###)- ### - ####">
+	    					<br >
+	    					<label for="femail"><span class = "red">*</span></label>
+	    					<input type="email" id="emailAddress" name="email" placeholder="BruceLee@example.com">
+	    					<br >
+
+	    					<label for="message"><span class = "red">*</span></label>
+	   						 <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+	   							
+	   						<p><span class = "red">*</span>Indicates required field</p>
+	   						 <br >
+
+	   						<input type="submit" value="Submit" >
+	   						<input type ="reset" value="Clear" >
+						</form> 
+					</div>
+				</div>
+			<a id ="btnUp" href ="#up"> <img src ="https://s9.postimg.org/v2busl0lb/up_Arrow.png"></a>
+
+		</div>
+</div>
+		<!-- ============= end of main part==================== -->
+
+	<div class ="footer">
+		<p> 2018 © All Rights Reserved | Terms & Conditions | Privacy Policy | made with pure ♥ </p>
+	</div>
+</body>
+	
+</html>
