@@ -3,14 +3,18 @@
 
 body, html{
 	margin: 0px;
-	padding: 0px;
+	margin-bottom: 50px;
+	/*margin-top:0px;*/
+	/*padding: 0px;*/
 	font-family: 'Arial', serif;
-	height: 100%;
+	height: 50%;
+  width: 100%;
 	font-size: "Lato", serif;
 	font-weight: 400;
 	line-height: 1.8em;
 	/*text color #7683de */
 	color: white;
+
 	/*background-color: #E5E1E0;*/
 
   /*background: #485563; */
@@ -18,43 +22,44 @@ body, html{
   background: -webkit-linear-gradient(to right, #485563, #29323c); 
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #485563, #29323c);
-
-
-
-	/* background-color:#7c828c; */	
 }
 
 .red{
 	color:red;
 }
 
+/*.navWrapper{
+	top: -18px;
+	width:100%;
+	position:absolute;
+	border: 2px solid pink;
+}*/
+
 .nav {
- 	z-index: 9999; /* for nav bar not fall behind content*/
-	background: #272326; /* fallback for old browsers */
-	/*background: -webkit-linear-gradient(to right, #485563, #333338);  Chrome 10-25, Safari 5.1-6 
-	background: linear-gradient(to right, #485563, #333338);*/
+  z-index: 9999; /* for nav bar not fall behind content*/
+  background: #272326; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #485563, #333338);  Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #485563, #333338);*/
 
 
+  margin-top:0px;
+  top: 0px;
+  /*background-color: #E5E1E0;
+  color: #ffffff;*/
+  list-style: none;
+  text-align: right;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  
+  /*position: -webkit-sticky;
+  position: sticky; */
+  position: sticky;
+  border: 1px solid black;
 
-	top: 0px;
-
-	/*background-color: #E5E1E0;
-	color: #ffffff;*/
-	list-style: none;
-	text-align: right;
-	padding-bottom: 15px;
-	padding-top: 15px;
-
-	
-	/*position: -webkit-sticky;
-	position: sticky; */
-	position: sticky;
-	border: 1px solid black;
 /*    overflow: hidden;
     position: fixed;
     bottom: 20;
     width: 95%;*/
-
 }
 
 .nav > li { 
@@ -84,7 +89,7 @@ a {
 	
 }
 
-.png1, .png2, .png3, .proSect1, .proSect2{
+.png1, .png2, .png3, .proSect1, .proSect2, .proSect3, .teachBg{
 	position: relative;
 	opacity: 0.70;
 	background-position: center;
@@ -94,6 +99,10 @@ a {
 	/* fixed = parallax while scroll = normal */
 	background-attachment: fixed;
 	
+}
+
+.introWrapper{
+	height:650px;
 }
 
 /*#btnIndex: hover > .png1{
@@ -112,34 +121,38 @@ a {
 	border: 5px solid #8f949a;
   	left: 8px;
 }
-/*.png2{
-	
-	background-image:url('image1.jpg'); 
-	min-height:50%;	
-}
-
-.png3{ 
-	
-	 background-image: url('image3.jpeg'); 
-	 min-height:50%; 
-} */
 
 .proSect1{
 
 	background-image: url('bgComp1.jpg');
 	min-height: 35%;
+	height: 425px;
+	margin: 45px;
+	font-weight:bold;
+	border: 5px solid white;
+}
+
+.proSect2{
+	background-image: url('city.jpg');
+	height:550px;
+}
+
+.proSect3{
+	background-image: url('room.jpg');
+	min-height: 35%;
+	height: 400px;
 	margin: 45px;
 	font-weight:bold;
 	border: 5px solid white;
 
-	
 }
 
+/*
 .content{
 
 
 }
-
+*/
 
 .knowMe{
 	text-align: center;
@@ -165,7 +178,7 @@ span.bold{
 .titleText{
 
   position: absolute; 
-  top: 6%;
+  top: 4.5%;
   left: 0px;
   right: 0px;
   /*color: #FFF;*/
@@ -178,7 +191,7 @@ span.bold{
 
   background: -webkit-linear-gradient(black, #242427);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   padding: 0px;
   margin: 0px;
   word-break: break-all;
@@ -224,7 +237,7 @@ span.bold{
 }
 
 /*This will make text appear upon over and also new text if clicked*/
-.textOverImage{
+/*.textOverImage{
     width:200px;
     height:200px;
     display:inline-block;
@@ -269,22 +282,8 @@ span.bold{
   
   .textOverImage > h2{
     margin:0;
-  }
-
-
-
-/* ============== */
-
-
-
-/* project page*/
-
-
-
-/* =============*/
-
-
-
+  }*/
+/*
 @keyframes showup {
     0% {opacity:0;}
     20% {opacity:1;}
@@ -305,48 +304,59 @@ span.bold{
     30% {width:355px;}
     80% {opacity:1;}
     100% {opacity:0;width:355px;}
-}
-
+}*/
 
 /*================== buttons ================================*/
 
-
 .btn {
-   border-top: 1px solid #5c5c5c;
-   background: #434547;
+    /*border-top: 1px solid #5c5c5c;*/
+  /* background: #434547;
    background: -webkit-gradient(linear, left top, left bottom, from(#585b5c), to(#434547));
    background: -webkit-linear-gradient(top, #585b5c, #434547);
    background: -moz-linear-gradient(top, #585b5c, #434547);
    background: -ms-linear-gradient(top, #585b5c, #434547);
-   background: -o-linear-gradient(top, #585b5c, #434547);
+   background: -o-linear-gradient(top, #585b5c, #434547);*/
+
    padding: 9px 18px;
-   -webkit-border-radius: 14px;
+  /* -webkit-border-radius: 14px;
    -moz-border-radius: 14px;
-   border-radius: 14px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   border-radius: 14px;*/
+ /*  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
    box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;*/
+   background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+
    color: white;
-   font-size: 13px;
+   font-size: 20px;
    font-family: Georgia, serif;
    text-decoration: none;
    vertical-align: middle;
-   }
+  } 
+    /*background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;*/
+
+/*.nav:hover > li > a{
+  color:pink;
+}*/
+
 .btn:hover {
-   border-top-color: #000000;
-   background: #000000;
-   color: #ccc;
+   background-color: #111;;
+   color: gray;
+   text-decoration: underline;
+
    }
 
-/*=================Parallax stars============*/
+/*=================Parallax stars============*/ 
+/*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
 
 #starbg {
-  height: 95%;
+  /*height: 95%;*/
   position: relative;
-  /*background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
   overflow: hidden;
-
 }
 
 #stars {
@@ -410,11 +420,69 @@ translateY(1800px);
 
 /*====================================*/
 
-
 .linkToMedia{
-
 	position: relative;
 	margin-top: -15px;
+}
+
+.linkBox{
+	padding:10px;
+	left: 460px;
+	position:absolute;
+	bottom: 40px;
+	font-size: 30px;
+	color: white;
+	border: 2px solid white;
+	background: rgba(0,0,0,0.6);
+}
+
+.linkBox:hover{
+	background-color: white;
+	color:black;
+}
+
+.projectLink{
+	font-size: 30px;
+	color: #272326;
+	border: 2px solid #272326;
+	padding:10px;
+	}
+
+.projectLink:hover{
+	background-color: #272326;
+	color:white;
+	padding: 10px;
+
+}
+
+.teachingLink{
+	position:absolute;
+	bottom: 70px;
+	right: 380px;
+	font-size: 30px;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+	border: 2px solid white;
+	padding:10px;
+	}
+
+.teachingLink:hover{
+	background-color: white;
+	color:#272326;
+	padding: 10px;
+}
+
+.resumeLink{
+	font-size: 25px;
+	color: #272326;
+	border: 2px solid #272326;
+	padding:5px;
+}
+
+.resumeLink:hover{
+	background-color: #272326;
+	color:white;
+	padding: 5px;	
 }
 
 /* ============== contents page ==============*/
@@ -424,8 +492,9 @@ translateY(1800px);
 	  background:#EEEDEC;
 	  /*border: 2px solid red;*/
 	  color:black;
+	  top: 5px;
 	  font-style: arial;
-	 height:415%;
+	 height: 1820%;
 }
 
 .projectDiv {
@@ -441,7 +510,6 @@ translateY(1800px);
 	position:absolute;
 	margin: 40px;
 	text-align:center;
-
 }
 
 .project1, .project2 , .project3, .project4 , .project5 , .project6{
@@ -454,50 +522,9 @@ translateY(1800px);
 	background-color: #A9A9A9;
 }
 
-/*.project2{
-	position: absolute;
-	top:125px;
-	left:650px;
-	
-}
-
-.project4{
-	position: absolute;
-	top: 450px;
-	left:650px;
-}
-*/
-/*.project1{
-	position:absolute;
-}*/
-
-
-/*.project1, .project3 , .project5{
-	
-	display:inline-block;
-	border: 2px solid black;
-	border-radius: 25px;
-	float:left;
-	width:40%;
-	height:22%;
-	overflow:auto;
-	margin: 20px;
-	background-color: #A9A9A9;
-}
-
-.project2, .project4, .project6{
-	display: inline-block;
-	border: 2px solid black;
-	border-radius: 25px;
-	float:right;
-	width: 40%;
-	height:22%;
-	overflow:auto;
-	margin: 20px;
-	background-color: #A9A9A9;
-}*/
-
 .titleFont{
+	position:absolute;
+	left:500px;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -519,7 +546,7 @@ translateY(1800px);
 	position: absolute;
    /*border: 5px solid yellow;*/
    /*float:right;*/
-   top: 1480px;
+   top: 1540px;
    width: 1262px;
    height: 600px;
    margin: 0 , 0 , 10, 10;
@@ -528,37 +555,50 @@ translateY(1800px);
 
 }
 
-.teachPostBox{
+.teachBg{
+	background-image: url('teachingBg.jpg');
+	min-height: 75%;
+	margin: 45px;
+	font-weight:bold;
+	border: 5px solid white;
+	/*filter: brightness(80%);*/
+}
+
+.teachText{
 	position:absolute;
-	margin: 40px;
-/*	background-color: #8C8C8C;*/
-	text-align:center;
-	border: 2px solid black;
-	width: 1170px;
-	height: 500px;
+	top: 60px;
+	color:white;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+
+}
+
+.teachDescription{
+	font-size: 40px;
+
 }
 
 .contactDiv{
 	position: absolute;
-	top: 2100px;
+	top: 2190px;
 	width: 1262px;
-	height: 105px;
+	height: 700px;
+	background-color: #EEEDEC;
 }
 
 .infoContact{
 	position:absolute;
 	border-radius: 20px;
 	text-align: left;
+	font-size: 18px;
 	border: 2px solid #C8C8C8;
 	top: 35px;
 	width:30%;
-	height:400%;
 	padding: 40px;
 	left:10px;
 }
 
  .messageContact{
-
  	position: absolute;
  	border-radius: 20px;
  	text-align: left;
@@ -566,9 +606,7 @@ translateY(1800px);
 	top: 35px;
 	left: 600px;
 	width: 40%;
-	height:400%;
 	padding: 40px;
-
 }
 
 #message{
@@ -579,11 +617,31 @@ translateY(1800px);
 
 
 .footer{
-	
-	border: 0.5px solid black;
+	/*border: 2.5px solid green;*/
 	background-color: #272326;
-	bottom: 0px;
-	overflow:hidden;
+	color:white;
+  position: relative;
+	/*position:static;*/
+	/*position: absolute;*/
+	/*width: 100%;*/
+	/*bottom: -100px;*/
+	/*overflow:hidden;*/
+
+  /*position: fixed;*/
+    /*height: 45px;*/
+    z-index: 99999px;
+ 	text-align: center;
+    bottom: 0px;
+
+    /*left: 0px;*/
+    /*right: 0px;*/
+    /*margin-bottom: 0px;*/
+    padding: 10px;
+
+/*   position: relative;
+   bottom: 0px;
+   width: 100%;
+*/
 }
 
 
@@ -604,6 +662,10 @@ translateY(1800px);
 
 /*====================================== Project section ==================================================================*/
 
+.projectWrapper{
+  height: 700px;
+}
+
 .quotes{
 	text-align: center;
 	color: white;
@@ -615,19 +677,19 @@ translateY(1800px);
 
 .projectDone{
 	/*border: 2px solid red;*/
-	/*position:absolute;*/
+	position:relative;
 	border:0.5px solid gray;
-	height:80%;
+	/*height:80%;*/
 	background-color: #E8E8E8;
 	color:black;
 }
 
 .projectWip{
-	/*position:absolute;*/
+	position: relative;
 	/*border: 2px solid green;*/
 	color:black;
-	border: 0.5px solid black;
-	height:80%;
+	border: 0.5px solid pink;
+	/*height:350px;*/
 	background-color: #B0B0B0;
 }
 
@@ -642,11 +704,11 @@ translateY(1800px);
 
 .project1Done, .project2Done, .project3Done, .project4Done {
 	text-align: center;
-	border: 2px solid green;
+	border: 2px solid gray;
 	border-radius: 25px;
 	display: inline-block;
 	width:46%;
-	height: 36%;
+	/*height: 36%;*/
 	margin: 20px;
 	background-color: #A9A9A9;
 
@@ -654,42 +716,127 @@ translateY(1800px);
 
 .project1Wip, .project2Wip{
 	text-align: center;
-	border: 2px solid green;
+	border: 2px solid black;
 	border-radius: 25px;
 	display: inline-block;
 	width:46%;
-	height: 36%;
+	/*height: 30%;*/
 	margin: 20px;
 	background-color: #A9A9A9;
 }
 
-
+.contentProject{
+	height: 800px;
+}
 
 /*==================================== About me =============================================================*/
 
-
-.myIntro{
-	color: black;
-	background-color: #D3D3D3;
-
-	border: 2px solid green;
+.contentAbout{
+	text-align: center;
 }
 
-
-.myTaste{
-
+.myIntro, .myTaste{
 	color:black;
-	background-color:#A9A9A9;
+	background: #E8E8E8;
+	border:2px solid transparent;
+}
 
+.funFact, .showResume{
+	color: black;
+	background: #F5F5F5;
+	text-align: center;
+	justify-content: auto;
+	border: 2px solid transparent;
+}
+.showResume{
+  height: 350px;
+}
 
-	border: 2px solid red;
+.box1, .box2, .box3{
+	/*border: 2px solid green;*/
+	font-family: tahoma serif;
+	font-size: 20px;
+	padding:40px;
+	display: inline-block;
+	text-align: left;
+	max-width: 1000px;
+}
+
+ .box4, .box5{
+  /*position:relative;*/
+  font-family: tahoma serif;
+  font-size: 20px;
+  /*padding:35px;*/
+  text-align: left;
+  display: inline-block;
+  /*border: 2px solid green;*/
+  max-width: 600px;
+  height:250px;
+  /*max-width: 545px; */
+  /*width:40%;*/
+  /*height: 230px;*/
+  /*height:%; */
+  /*border: 2px solid green;*/
+ }
+
+/*============================================= teaching ==========================================*/
+
+.teachIntoWrapper{
+  height:610px;
+}
+
+.teachingMaterials{
+	color:black;
+	background:#E8E8E8;
+	/*height: 50%;*/
+	height: 500px;
+	/*border: 2px solid red;*/
+}
+
+.linkToCourse{
+  background: #F5F5F5;
+  color:black;
+  /*border: 2px solid green;*/
+}
+
+.teachWrapper{
+	/*height: 1000px;*/
 
 }
 
+.java1, .java2 , .java3, .java4 , .java5{
+	margin: 20px;
+	display: inline-block;
+	/*border: 1px solid black;*/
+  /*visibility: hidden;*/
+	/*float:left;*/
+}
 
+.java1:hover, .java2:hover , .java3:hover, .java4:hover , .java5:hover{
 
+	filter: brightness(50%);
+	/*border: 2px solid pink;*/
+  /*visibility: visible;*/
+}
 
-/*============ PreLoader ======================*/
+.clickText{
+	position: absolute;
+	top: 700px;
+  display: none;
+  font-size: 20px;
+  color: #272326;
+  border: 2px solid #272326;
+  padding:10px;
+  /*z-index: 9999px;*/
+}
+
+.java1:hover .clickText, .java2:hover .clickText , .java3:hover .clickText, .java4:hover .clickText, .java5:hover .clickText{
+  display: block;
+	/*z-index: 999;*/
+	/*visibility: visible;*/
+}
+
+/*============================================= PreLoader =========================================*/
 
 #loader-wrapper {
     position: fixed;

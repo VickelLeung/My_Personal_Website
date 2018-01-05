@@ -1,34 +1,93 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 	
 <html lang= "en">
 
 	<head>
-		<meta charset = "utf-8">
+			<meta charset = "utf-8">
+			<meta name ="author" content ="Vickel Leung">
+			<meta name="description" content="A simple human that enjoy making apps/website.">
+  			<meta name="keywords" content="personal website, vickel, leung, programmer">
 		<title>
-		Vickel's Website
+			Vickel Leung
 		</title>
-		<link rel ="stylesheet" type ="text/css" href ="style.css">		
+		<link rel ="stylesheet" type ="text/css" href ="style.css">
+		<link rel ="shortcut icon" type="image/png" href="favicon.png"/>	
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script>
+		    $(document).ready(function(){ 
+		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+		   }); 
+		</script>
+
 	</head>
 	
 	<body>
-		
+	<div class ="teachIntoWrapper">
 		<ul class ="nav">
-		
-			<li> <a class ="btn" href ="AboutMe.html"> About Me</a> </li>
-			<li> <a class ="btn" href ="project.html"> Project</a> </li>
-			<li> <a class ="btn" href ="index.html"> Home</a> </li>
-
+			<li> <a class ="btn" href ="AboutMe"> About Me</a> </li>
+			<li> <a class ="btn" href ="project"> Project</a> </li>
+			<li> <a class ="btn" href ="index"> Home</a> </li>
 		</ul>
+		<span class ="titleFont">Teaching Materials</span>
+		<br >
+		<div class ="proSect3">		
+			<div class ="quotes">
+				<p>"Teaching is the highest form of understanding." <br ><br > - Aristotle</p>
+			</div>
+		</div>	
+	</div>
+		<div class ="teachWrapper">
+
+			<div class ="teachingMaterials">
+				<p>My personal notes</p>
+				<div class ="java">
+					<div class ="java1">	
+						<a href = "javaFiles/1_Introduction to java.pdf"> 
+							<img src="https://s9.postimg.org/3zkalylbz/java1.png" alt="java1">
+						</a>
+					</div>
+
+					<div class ="java2">
+						<a href="javaFiles/2_Chapter 2 console I&O.pdf">
+							<img src ="https://s9.postimg.org/yh05djizj/java2.png" alt="java2">
+							<p class ="clickText"> Click to view notes</p>
+						</a>
+					</div>
+
+					<div class ="java3">
+						<a href="javaFiles/3_flow of control.pdf">
+							<img src ="https://s9.postimg.org/8lgeucovj/java3.png" alt="java3">
+						</a>
+					</div>
+
+					<div class ="java4">
+						<a href="javaFiles/4_Chapter 4 Define classes.pdf">
+							<img src ="https://s9.postimg.org/4cbos78rj/java4.png" alt="java4">
+						</a>
+					</div>
 
 
+					<div class ="java5">
+						<a href="javaFiles/5_Chapter 5 Array.pdf">
+							<img src ="https://s9.postimg.org/qbi3fexbj/java5.png" alt ="java5">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class ="linkToCourse">
+			<p>Here are some useful links for concordia course and also my personal teaching materials.</p>
+			<a href="https://drive.google.com/open?id=0B8a2R11fK-RoT3djcms2VXFkUWc">Concordia courses</a>
+		</div>
 
-
-
-
-
-
-
+	<div class ="footer">
+		<p> 2018 © All Rights Reserved | Privacy Policy | made with pure ♥ </p>
+	</div>
 
 	</body>
+
+
 </html>

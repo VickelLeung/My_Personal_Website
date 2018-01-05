@@ -1,139 +1,150 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 	
 <html lang= "en">
 
 	<head>
-		<meta charset = "utf-8">
+			<meta charset = "utf-8">
+			<meta name ="author" content ="Vickel Leung">
+			<meta name="description" content="A simple human that enjoy making apps/website.">
+  			<meta name="keywords" content="personal website, vickel, leung, programmer">
 		<title>
-		Vickel's Website
+			Vickel Leung
 		</title>
 		<link rel ="stylesheet" type ="text/css" href ="style.css">
+		<link rel ="shortcut icon" type="image/png" href="favicon.png"/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script>
+		    $(document).ready(function(){ 
+		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+		   }); 
+		</script>
 
 	</head>
 
 <body>
 	
-	<!-- <div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div> -->
-
+<div class ="proSect2">	
 	<ul class ="nav">
-		<li> <a class ="btn" href ="project.html"> Project</a> </li>
-		<li> <a class ="btn" href ="teaching.html"> Teaching materials</a> </li>
-		<li> <a class ="btn" href ="index.html"> Home</a> </li>
-	</ul>
-	
-	<div class = "personalText">
-
-
-		<h2>Wow a whole page just about me!</h2>
-	
-	
-	<h3> Vickel Leung :)</h3>
-		<img id ="avatar" src ="https://s17.postimg.org/y5dm3h64v/funny-cat-pictures-with-captions-44.jpg">
-	
-	</div>
+			<li> <a class ="btn" href ="project"> Project</a> </li>
+			<li> <a class ="btn" href ="teaching"> Teaching materials</a> </li>
+			<li> <a class ="btn" href ="index"> Home</a> </li>
+	</ul>	
+		<div class = "personalText">
+			<h2>Wow a whole page just about me!</h2>
+		<h3> Vickel Leung :)</h3>
+			<img id ="avatar" src ="https://s17.postimg.org/y5dm3h64v/funny-cat-pictures-with-captions-44.jpg">
+		</div>
+</div>	
 
 <div class ="contentAbout">
-
 	<div class ="myIntro">
-		<div class ='intro'> Hey, my name is vickel and as you can see I am a young asian guy that loves tech! If you are looking for a funny/kind/ human being, look no further because he is just infront of you. </div>
+			<div class ='intro'> 
+				<div class ="box2">
+					<h2>Who am I?</h2>
+					<p>
+						My path as a web & android developer was not a walk in the park, there were many obstacles in my ways and it is because of that I was able to become who I am today. I used to be an average student in high school and video game had a huge impact during my school year. However, that is a story for another time. 
+						<br ><br >After high school, I decided to do something productive, which is getting a diploma in languages at Dawson college, but it was during my last year when I took an elective in computer science that I fell in love with programming. Soon after my graduation, I've applied to an university and major in computer science. Now here I am trying to change the world one step at a time with technology.	
+					</p>
+					<p>
+						All that being said, my work ethic has changed and I have been working really hard to learn as much as possible to accomplish my dream of changing the world with my superpower(coding). It's not true that I am all work and no play. I always start my morning by going to the gym to release all the stress and worries out of my mind. Nonetheless, I enjoy exploring new things and I am not scare of trying out anything outside my boundary. I once .
+						I want to try everything in this world at least once because we only have one life and might as well make the most out of it. 
 
-		<div class ="education">
-			<p>
-			 Concordia University : Bachelor of Computer Science
+					</p>
+				</div>
 
-			 <br>
-			 Dawson College: DEC in Art, Letter and Communication – Language Profil
-			 	<br>
-			 	Nothing special happened in those 2 years, Excepts I learned a lot of 
-			 	languages, not programming of course.
-			</p>
+				<div class ="myLife">
 
 
+				</div>
 		</div>
-	
-
-
-		<div class = "achievement">
-
-		</div>
-
-		<div class ="skillsLevel" >
-			
-			<img id ="progLevel" src = "https://s17.postimg.org/yk7h3u3rj/meta-chart.png" >
-
-
-		</div>
-	</div>
-
-	<div class ="myLife">
-
-
-	</div>
-
-
-
-	<div class ="myTaste">
-		<h2>My likes</h2>
-		<label class = "textOverImage" style ="background-image: url(https://s18.postimg.org/u7tvej5tl/programming.jpg)"> 
-			
-				<input type="checkbox">
-				<h2>Programming</h2>
-					<div>
-					 One of my favorite hobby is just to program and make things from scratch. I enjoy making website and 
-					 applications because they are so fun and challenging! 
-			
-					</div>
-		</label>
-
-		<label class = "textOverImage" style ="background-image: url(https://s18.postimg.org/4vf84dard/workout.png)"> 
-				
-					<input type="checkbox">
-					<h2>Working out</h2>
-						<div>
-						Workout is a must for me! I love starting my day with a nice workout. Not only has working out
-						improved my physique and health but it also relieve all those stress :D
-					
-						</div>
-		</label>
-
-		<label class = "textOverImage" style ="background-image: url(https://s17.postimg.org/nzxjl4oy7/art.png)"> 
-				
-					<input type="checkbox">
-					<h2>Arts and entertainnment</h2>
-						<div>
-						I spend a lot of my free time drawing/painting and playing piano(yes typical asian). Art make 
-						me think and gives me freedom of doing what I want to do by conveying into art 
-						</div>
-		</label>
-
-
-				
-		<h2>My dislikes</h2>
-		<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMTkzNl8?inline=1)">
-		  <input type="checkbox">
-			  <h2>Grapes</h2>
-				  <div>
-				    Grapes can be eaten fresh as table grapes or they can be used for making wine, jam, juice, jelly, grape seed extract, raisins, vinegar, and grape seed oil
-				  </div>
-		</label>	
-
-
-		<p>Thank you for stalking me, please come again! :D</p>
-
 	</div>
 
 	<div class ="funFact">
+		<div class ="box1">
+			<h2>Here are some fun facts about me </h2>
+			<ol> 
+				<li>I cannot swim even though I learned it when I was a kid.</li>
+				<li>I'm a huge fan of the walking dead and zombies movies. <span class = "red">(Spoiler alert)</span> I sometimes wish I could be glenn but then I would have lost my head.</li>
+				<li>I have never broken a bone, and I hope it stays that way!</li>
+				<li>I used to be a hermit and I was very shy, I could not even look at someone in the eyes.</li>
+				<li>Never have I even stepped my foot outside of Canada, I plan to change that soon.(Ontario is the furthest I went)</li>
+			</ol>
+		</div>
 	</div>
 
+	<div class ="myTaste">
 
+		<div class ="education">
+			<div class ="box3">
+				<h2>My Education & Skillset</h2>
+				<p>Here is a list of all my education and what skill I can do.<br >Concordia University : Bachelor of Computer Science 
+
+				 <br>
+				 Dawson College: DEC in Art, Letter and Communication – Language Profil
+				 	<br>
+				 	Nothing special happened in those 2 years, Excepts I learned a lot of 
+				 	languages, not programming of course.
+				</p>
+
+			</div>
+		</div>
+
+
+		<div class ="skillsLevel" >
+			
+			<!-- <img id ="progLevel" src = "https://s17.postimg.org/yk7h3u3rj/meta-chart.png" > -->
+
+		</div>
+	</div>
+
+	<div class ="showResume">
+		<div class ="box4">
+			<h2>Contact me</h2>
+			<p>
+				Now that you had the chance to know me a bit better if you wish to contact me, feel free to use any of the social media below.
+			</p>
+
+			<div class= "myEmail">
+				<img src ="https://s9.postimg.org/uxlvoi03z/mail-black-envelope-symbol.png">
+				<span >Vickelleung@gmail.com</span>
+			</div>
+			<div class ="myNumber">
+				<img src ="https://s9.postimg.org/wdxe6ban3/telephone.png">
+				<span>(514)-815-8638</span>
+			</div>
+
+			<div class ="myLocation">
+				<img src ="https://s9.postimg.org/rs19y0u9r/facebook-placeholder-for-locate-places-on-maps.png">
+				<span>Laprairie, Quebec, Canada</span>
+			</div>
+
+			<br >
+			<div class ="linkToMedia">
+				<a href="https://github.com/VickelLeung">
+					<img src = "https://s33.postimg.org/7shohmrhb/rsz_151336527737822.png">
+				</a> 
+				<a href="https://www.linkedin.com/in/vickelLeung">
+					<img src = "https://s33.postimg.org/pvar990b3/rsz_eqphkclfwfhwvdobwlce.png">
+				</a> 
+			</div>
+		</div>
+
+		<div class ="box5">
+			<h2>Let me help you</h2>
+			<p> If you are looking for a mentor, partner or you are interested in hiring me then I am more than happy to be of assistance. Feel free to take a peek at my resume to see what I can do and what I have done. 
+				<br ><br >
+				<a href= "test.txt" class ="resumeLink" download = "Vickel's CV"> Download my resume </a>
+			</p>
+			<br ><br ><br >
+			
+		</div>
+	</div>
 </div>
-	
-	
-		<footer>
- 			<p> 2018 © All Rights Reserved Terms & Conditions | Privacy Policy, made with pure ♥ </p>
-		</footer>
+		<div class ="footer">
+			<p> 2018 © All Rights Reserved | Privacy Policy | made with pure ♥ </p>
+		</div>
 </body>
 
 
