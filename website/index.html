@@ -3,11 +3,11 @@
 <html>
 	<head>
 			<!-- for mobile conversion -->
-			<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 			<meta charset = "utf-8">
 			<meta name ="author" content ="Vickel Leung">
-			<meta name="description" content="A simple human that enjoy making apps & website.">
+			<meta name="description" content="A simple human being that enjoy programming.">
   			<meta name="keywords" content="personal website, vickel, leung, programmer">
 
 			<title>
@@ -110,14 +110,35 @@
 	<div id="up">
 		<a href="up"></a>
 	</div>
+
 	<div class ="introWrapper">
+		
+								<!-- <div class ="buttons-coll">
+				<li> 
+					<a class ="custom-btn btn-12"  href ="project"> Projectasdsa</a>
+					 </li>
+  
+			</div> -->
+
 			<ul class ="nav">
-				<!-- <div class ="navBtn"> -->
-					<li> <a class ="btn" id = "btnProject" href ="project"> Project</a> </li>
+				<!-- <span class ="logo">
+					<img src ="img/myLogo.png">
+				</span> -->
+			 <!-- <div class ="buttons-coll"> -->
+				<li> 
+					<a class ="custom-btn btn-12"  href ="project"> Projects</a>
+				</li>
+				<li> <a class ="custom-btn btn-12" id = "btnPersonal" href ="AboutMe"> About Me</a> </li>
+  				<li> <a class ="custom-btn btn-12" id = "btnTeach" href ="teaching"> Teaching materials</a> </li>
+  				<li> <a class ="custom-btn btn-12" id = "idContact" href ="#bottom"> Hire me</a> </li>
+			 <!-- </div> -->
+					
+
+					<!-- <li> <a class ="btn" id = "btnProject" href ="project"> Project</a> </li>
 					<li> <a class ="btn" id = "btnPersonal" href ="AboutMe"> About Me</a> </li>
 					<li> <a class ="btn" id = "btnTeach" href ="teaching"> Teaching materials</a> </li>
 					<li> <a class ="btn" id = "idContact" href ="#bottom"> Hire me</a> </li>
-				<!-- </div> -->
+				 -->
 
 				<!-- ======================== Preloader ======================= -->
 				<div id="loader-wrapper">
@@ -128,13 +149,14 @@
 				            <div class="loader-section section-right"></div>
 				</div>
 			</ul>
-		
-		 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 		<div id ="starBg">
 			<div id='stars'></div>
-			<div id='stars2'></div>
-			<div id='stars3'></div>
-		</div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+
+
+		 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		
 
 		<!-- ============= start of main part==================== -->
 		
@@ -151,7 +173,7 @@
 					</a> 
 				</div>
 		</div>
-
+	
 		<div class = "png1">
 		
 			<div class ="ptext">
@@ -165,14 +187,13 @@
 					<br > <br >
 					<a class ="linkBox" href="AboutMe">Learn more about me</a>
 				</span>
-			</div>
+			</div>		
 		</div>
-			
 	</div>
+</div>
 
 	<div class ="content">		
-			<div class ="projectDiv">
-			
+			<div class ="projectDiv">			
 				<div class ="projectBox">
 					
 						<h6>
@@ -180,11 +201,9 @@
 								My Projects 
 							</span>
 							<br >
-								(Click on <img src ="https://s9.postimg.org/ze1dkrd7z/project_Github.png")> for source code)
+								<span>(Click on <img src ="https://s9.postimg.org/ze1dkrd7z/project_Github.png")> for source code)</span>
 						</h6> 
 					
-
-
 						<div class ="project1"> 
 							<div class ="projectTitle">
 							 <h3>
@@ -213,7 +232,6 @@
 							 </div>
 
 						</div>
-
 
 						<div class ="project2">
 
@@ -334,7 +352,6 @@
 							 </div>
 						</div>
 
-
 						<div class ="project6"> 
 
 							<div class ="projectTitle">
@@ -364,26 +381,25 @@
 						<a class ="projectLink" href="project">View all my projects</a>
 				</div>		
 			</div>
-			
-			<br >
+				
 			<div class ="teachPostDiv">
 
-
 				<div class = "teachBg">	
-					<span class="teachText"> 
+					<div class="teachText"> 
 						<p class ="teachIntro">There is no limit to how much you can learn.</p>
 						<p class ="teachDescription">Let's learn together and share all knowledge, knowledge is power.</p>
-					</span>
+					</div>
 
-					<a class ="teachingLink" href="teaching">View my teaching materials</a>
-
+					<div class ="teachDivLink">
+					<a class ="teachingLink" href="teaching">View my teaching materials </a>
+					</div>
 				</div>
-			</div>
-			
+			</div>			
 
-		<div class ="contactDiv">	
+	<div class ="contactDiv">	
+		<!-- <div class ="contactWrapper"> -->
 			<div id="bottom"><a href="bottom"></a></div>
-				<span class ="titleFont">How to contact me</span>
+				<h6><span class ="titleFont">How to contact me</span></h6>
 
 					<div class= "infoContact">
 							
@@ -393,7 +409,7 @@
 							</div>
 							<br >
 						
-							<a href= "Vickel CV 2018 English.doc" class ="resumeLink" download = "Vickel's CV"> 
+							<a href= "Vickel CV 2018 English.pdf" class ="resumeLink" download = "Vickel CV"> 
 								Download my resume
 							 </a>
 						</div>
@@ -402,8 +418,8 @@
 						<div class ="contactMe">
 							
 								<div class= "myEmail">
-									<img src ="https://s9.postimg.org/uxlvoi03z/mail-black-envelope-symbol.png">
-									<span >Vickelleung@gmail.com</span>
+									<a href="mailto:vickelleung@gmail.com"><img src ="https://s9.postimg.org/uxlvoi03z/mail-black-envelope-symbol.png"> </a>
+									<a href="mailto:vickelleung@gmail.com">Vickelleung@gmail.com</a>
 								</div>
 								<div class ="myNumber">
 									<img src ="https://s9.postimg.org/wdxe6ban3/telephone.png">
@@ -456,14 +472,13 @@
 					</div>
 				<a id ="btnUp" href ="#up"> <img src ="https://s9.postimg.org/v2busl0lb/up_Arrow.png"></a>
 
+				<!-- </div> -->
 		</div>
-		
 </div>
 		<div class ="footer">
 				<p> 2018 © All Rights Reserved | Privacy Policy | made with pure ♥ </p>
 		</div>
 		<!-- ============= end of main part==================== -->
-
 	
 </body>
 	
