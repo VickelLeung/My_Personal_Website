@@ -404,7 +404,7 @@ span.bold{
 #starbg {
   /*height: 95%;*/
   /*position: relative;*/
-  min-height: 100px;
+  max-height: 10%;
   overflow: hidden;
 }
 
@@ -781,6 +781,11 @@ translateY(1800px);
   border-radius: 10px;
 }
 
+input[type="text"]{
+  background-color:#DCDCDC;
+  color:#707070;
+}
+
 /*====================================== Project section ==================================================================*/
 
 .projectWrapper{
@@ -909,7 +914,8 @@ translateY(1800px);
 
 .teachingMaterials{
 	color:black;
-	background:#E8E8E8;
+	/*background:#E8E8E8;*/
+  background-color:#E8E8E8;
   position: relative;
   padding: 0.6%;
 	/*height: 50%;*/
@@ -919,8 +925,11 @@ translateY(1800px);
 
 .linkToCourse{
   position: relative;
-  background: #F5F5F5;
+  /*background: #F5F5F5;*/
+  background-color:#C8C8C8;
   color:black;
+  text-align: center;
+  padding:4%;
   /*border: 2px solid green;*/
 }
 
@@ -929,7 +938,7 @@ translateY(1800px);
 
 }
 
-.java{
+.java, .webDevelopment{
   border: 2px solid gray;
   margin:2%;
   text-align: center;
@@ -956,16 +965,41 @@ translateY(1800px);
 	/*top: 700px;*/
   display: block;
   font-size: 20px;
-  color: #272326;
+  color: black;
   border: 2px solid #272326;
   /*padding:10px;*/
   
+}
+
+.clickText:hover{
+  background-color: #B0B0B0;
+  border:2px solid black;
+  color: black;
 }
 
 .java1:hover .clickText, .java2:hover .clickText , .java3:hover .clickText, .java4:hover .clickText, .java5:hover .clickText{
   display: block;
 	/*z-index: 999;*/
 	/*visibility: visible;*/
+}
+
+.googleLink{
+  font-size: 30px;
+  padding:0.5%;
+  border: 2px solid black;
+  color: black;
+}
+
+.googleLink:hover{
+  font-size: 30px;
+  padding:0.5%;
+  border:2px solid white;
+  color:white;
+}
+
+
+.comingText{
+  font-size: 40px;
 }
 
 /*============================================= PreLoader =========================================*/
