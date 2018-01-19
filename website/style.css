@@ -27,6 +27,20 @@ body, html{
 	color:red;
 }
 
+.truncate{
+    width:15em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncate:hover{
+  overflow:none;
+  width: 100%;
+  text-overflow: none;
+  white-space: pre-wrap;
+}
+
 .nav {
   z-index: 9999; /* for nav bar not fall behind content*/
   background: #272326; /* fallback for old browsers */
@@ -88,7 +102,8 @@ a {
 
 .png1, .png2, .png3, .proSect1, .proSect2, .proSect3{
 	position: relative;
-	opacity: 0.70;
+	/*opacity: 0.70;*/
+  opacity: 0.7;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -175,30 +190,38 @@ span.bold{
 
 .titleText{
 
-  position: absolute; 
-  top: 4.5%;
+  /*position: absolute; 
+  top: 5.5%;
   left: 0px;
-  right: 0px;
-  /*color: #FFF;*/
+  right: 0px;*/
+    /*color: #FFF;*/
   /*color: white;*/
+  position:relative;
+  /*border:2px solid green;*/
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
   font-size: 35px;
   letter-spacing: 3px;
 
-  background: -webkit-linear-gradient(black, #242427);
+ /* background: -webkit-linear-gradient(black, #242427);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: white;*/
   padding: 0px;
   margin: 0px;
   word-break: break-all;
 }
 
 
-.titleText > h5{
+/*.titleText > h5{
 	height: 0.1px;
 	z-index: 999;
+}*/
+
+.myName{
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
 }
 
 .titleText > p{
@@ -359,13 +382,13 @@ span.bold{
 }*/
 
 .custom-btn {
-  padding: 10px 25px;
+  padding: 5px 25px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   background: transparent;
   outline: none !important;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
   position: relative;
   display: inline-block;
 }        
@@ -383,18 +406,19 @@ span.bold{
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: #000;
-  transition: all 0.3s ease;
+  /*background: #000000;*/
+  background:white;
+  transition: all 0.5s ease;
 }
 .btn-12:hover {
-  color: #fff;
+  /*color: #fff;*/
+  color:black;
 }
 .btn-12:hover:after {
   top: 0;
   height: 100%;
 }
 .btn-12:active {top: 2px;}
-
 
 
 
@@ -591,15 +615,15 @@ translateY(1800px);
 .titleFont{
 	/*position:relative;*/
   top:0%;
-	left:43%;
+	/*left:43%;*/
 	font-weight: bold;
 	font-size: 30px;
+  text-align: center;
 }
 
-/*.projectTitle{
-
-
-}*/
+.textTitle{
+  text-align: center;
+}
 
 .projectType{
 	border-radius: 25px;
@@ -731,7 +755,7 @@ translateY(1800px);
 }
 
 #message{
-	height:200px;
+	height:120px;
 	width:350px;
   margin: 0 auto;
 	resize:none;
@@ -781,24 +805,51 @@ translateY(1800px);
   border-radius: 10px;
 }
 
-input[type="text"]{
-  background-color:#DCDCDC;
-  color:#707070;
+#contact input[type="text"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover{
+  border:2px solid black;
 }
+
+#contact input[type="text"],
+#contact input[type="tel"],
+#contact input[type="email"],
+#contact textarea {
+
+  padding:10px;
+}
+
+/*#contact{
+ padding:5px;
+}*/
+
+
 
 /*====================================== Project section ==================================================================*/
 
 .projectWrapper{
-  height: 700px;
+  /*height: 700px;*/
+  height:450%;
 }
 
 .quotes{
+  position: relative;
+  top:30%;
 	text-align: center;
 	color: white;
 	font-weight:bold;
 	font-size: 26px;
 
 	background: rgba(0, 0, 0, 0.3);
+}
+
+.projectIntro{
+  position:relative;
+  background-color: gray;
+  color:black;
+  text-align: center;
+  border:0.5px solid gray;
 }
 
 .projectDone{
@@ -808,6 +859,7 @@ input[type="text"]{
 	/*height:80%;*/
 	background-color: #E8E8E8;
 	color:black;
+  text-align: center;
 }
 
 .projectWip{
@@ -817,6 +869,7 @@ input[type="text"]{
 	border: 0.5px solid #B0B0B0;
 	/*height:350px;*/
 	background-color: #B0B0B0;
+  text-align: center;
 }
 
 .personalColor{
@@ -857,6 +910,11 @@ input[type="text"]{
 }
 
 /*==================================== About me =============================================================*/
+
+.navWrapper{
+  position:relative;
+  border:2px solid white;
+}
 
 .contentAbout{
 	text-align: center;
@@ -909,7 +967,9 @@ input[type="text"]{
 /*============================================= teaching ==========================================*/
 
 .teachIntoWrapper{
-  height:610px;
+  /*height:610px;*/
+  height:380%;
+  text-align: center;
 }
 
 .teachingMaterials{
@@ -918,6 +978,7 @@ input[type="text"]{
   background-color:#E8E8E8;
   position: relative;
   padding: 0.6%;
+  text-align: center;
 	/*height: 50%;*/
 	/*height: 500px;*/
 	/*border: 2px solid red;*/

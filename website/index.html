@@ -4,7 +4,6 @@
 	<head>
 			<!-- for mobile conversion -->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 			<meta charset = "utf-8">
 			<meta name ="author" content ="Vickel Leung">
 			<meta name="description" content="A simple human being that enjoy programming.">
@@ -46,7 +45,7 @@
 			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			      $('html, body').animate({
 			        scrollTop: $(hash).offset().top
-			      }, 3200, function(){
+			      }, 2200, function(){
 			   
 			        // Add hash (#) to URL when done scrolling (default click behavior)
 			        window.location.hash = hash;
@@ -74,7 +73,7 @@
 			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			      $('html, body').animate({
 			        scrollTop: $(hash).offset().top
-			      }, 2200, function(){
+			      }, 3200, function(){
 			   
 			        // Add hash (#) to URL when done scrolling (default click behavior)
 			        window.location.hash = hash;
@@ -148,10 +147,9 @@
 				            <div class="loader-section section-right"></div>
 				</div>
 			</ul>
+
 		<div id ="starBg">
-			<div id='stars'></div>
-					<div id='stars2'></div>
-					<div id='stars3'></div>
+			
 
 
 		 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -160,7 +158,7 @@
 		<!-- ============= start of main part==================== -->
 		
 		<div class ="titleText">
-			<h5>Vickel Leung</h5>
+			<span class ="myName">Vickel Leung</span>
 			<p >web & android developer</p>
 
 				<div class ="linkToMedia">
@@ -173,6 +171,10 @@
 				</div>
 		</div>
 	
+		<div id='stars'></div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+
 		<div class = "png1">
 		
 			<div class ="ptext">
@@ -207,7 +209,7 @@
 							<div class ="projectTitle">
 							 <h3>
 							 	Battleship 
-							 		<a href="https://github.com/VickelLeung/Battleship-School-project-">
+							 		<a href="https://github.com/VickelLeung/Battleship-School-project-" target="_blanc">
 										<img src ="img/project_Github.png" alt ="githubCat">
 									</a>  
 							 </h3>
@@ -227,6 +229,8 @@
 
 								 <div class ="linkToProject">
 
+								 	<!-- https://github.com/VickelLeung/TicTacToe_2.0_Android -->
+
 								 </div>
 							 </div>
 
@@ -238,7 +242,7 @@
 							 	<h3>
 							 	TicTacToe
 							 	<!-- Review link -->
-								 	<a href="https://github.com/VickelLeung/Battleship_School_project">
+								 	<a href="https://github.com/VickelLeung/TicTacToe_2.0_Android" target="_blanc">
 											
 											<img src ="img/project_Github.png" alt ="githubCat">
 									</a>  
@@ -251,7 +255,7 @@
 							</div>
 
 							<div class ="projectImg">
-							
+								<img src="img/tictactoeMain.png" alt="tictactoeImg">
 							</div>
 
 							 <div class ="projectType">
@@ -269,7 +273,7 @@
 							<div class ="projectTitle">
 							 	<h3>
 							 		Apartment Search
-							 			<a href="https://github.com/VickelLeung/apartment-search">
+							 			<a href="https://github.com/VickelLeung/apartment-search" target="_blanc">
 											
 											<img src ="img/project_Github.png" alt ="githubCat">
 										</a>  
@@ -302,7 +306,7 @@
 							 	<h3>
 							 		Hangman 
 							 		<!-- Review Link -->
-							 			<a href="https://github.com/VickelLeung/Battleship-School-project-">
+							 			<a href="https://github.com/VickelLeung/Hangman_2.0_Android" target="_blanc">
 										
 												<img src ="img/project_Github.png" alt ="githubCat">
 										</a>   
@@ -333,7 +337,7 @@
 							<div class ="projectTitle">
 							 	<h3>
 							 		Risk 
-							 			<a href="https://github.com/VickelLeung/Risk-game">
+							 			<a href="https://github.com/VickelLeung/Risk-game" target="_blanc">
 											<img src ="img/project_Github.png" alt ="githubCat">
 										</a>  
 							 	</h3> 
@@ -344,7 +348,7 @@
 							<br >
 
 							<div class ="projectImg">
-								
+								<img src="img/riskImg.jpg" alt="riskImg">
 							</div>
 
 
@@ -361,8 +365,8 @@
 
 							<div class ="projectTitle">
 							 	<h3> 
-							 		Refugee Camp - Web applicaiton storing information
-							 		<a href="https://github.com/VickelLeung/PixelPenguins">
+							 		Refugee Camp - Web application storing information
+							 		<a href="https://github.com/VickelLeung/PixelPenguins" target="_blanc">
 										<img src ="img/project_Github.png" alt ="githubCat">
 									</a>  
 							 	</h3> 
@@ -453,18 +457,18 @@
 				<div class = "messageContact">
 						<span>Got a message, comment or feedback?</span>
 						<div class="contactForm">
-							<form action="mail_handler.php" method="post" name="form" >
+							<form id="contact" action="mail_handler.php" method="post" name="form" >
 							  	<label for="name"></label>
-		    					<input type="text" name="name"placeholder="Enter your name">
+		    					<input type="text" name="name"placeholder="Name">
 		    					<br >
 		    					<label for="phone"></label>
-		    					<input type="number" id="phoneNumber" name="phone" placeholder="(###)- ### - ####">
+		    					<input type="tel" id="phoneNumber" name="phone" placeholder="Phone Number">
 		    					<br >
 		    					<label for="email"><span class = "red">*</span></label>
-		    					<input type="email" id="emailAddress" name="email" placeholder="EmailName@example.com">
+		    					<input type="email" id="emailAddress" name="email" placeholder="Email Address">
 		    					<br >
 		    					<label for="message"><span class = "red">*</span></label>
-		   						 <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+		   						 <textarea id="message" name="message" placeholder="Message"></textarea>
 		   							
 		   						<p><span class = "red">*</span>Indicates required field</p>
 		   						 <br >

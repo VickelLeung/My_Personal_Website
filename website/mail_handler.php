@@ -11,7 +11,8 @@
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-			echo "<h1>Your email was Sent Successfully! Thank you"." ".$name.", We will contact ASAP!</h1>";
+			echo "<h1>Your email was Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
+
 		}
 		else{
 			echo "Oh no, something went wrong!";
