@@ -16,6 +16,15 @@
 			<link rel ="shortcut icon" type="image/png" href="turtle1.png"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+				<!-- remove branding -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script>
+		    $(document).ready(function(){ 
+		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+		   }); 
+		</script>
+		
 		<script>
 
 			//for scroll up botton
@@ -92,14 +101,6 @@
 			});
 
 		</script>
-
-	<!-- remove branding -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	 <script>
-	    $(document).ready(function(){ 
-	    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
-	   }); 
-	</script>
 
 	</head>
 	
@@ -181,7 +182,7 @@
 				<span class = "border">
 					<h2>
 						<p>
-						Life is like riding a bicycle. To keep your balance you must keep moving.
+						"Life is like riding a bicycle. To keep your balance you must keep moving."
 						<br><br>– Albert Einstein
 						</p>
 					</h2>
@@ -206,35 +207,37 @@
 						</h6> 
 					
 						<div class ="project1"> 
+
 							<div class ="projectTitle">
-							 <h3>
-							 	Battleship 
-							 		<a href="https://github.com/VickelLeung/Battleship-School-project-" target="_blanc">
-										<img src ="img/project_Github.png" alt ="githubCat">
-									</a>  
-							 </h3>
-
-							 </div>
-							 <div class="projectDescription">
-							A game of battleship where each player take turn firing a rocket to sink the opponent ship. The game was implemented using java, and it ran on the console.
+							 	<h3>
+							 		Hangman 
+							 		<!-- Review Link -->
+							 			<a href="https://github.com/VickelLeung/Hangman_2.0_Android" target="_blanc">
+										
+												<img src ="img/project_Github.png" alt ="githubCat">
+										</a>   
+							 	</h3> 
 							</div>
-							 <br >
-
-							 <div class ="projectImg">
-							 	<img src="img/Battle_Ship_Img.png" alt="shipImg">
+							<div class="projectDescription">
+								A game of hangman made using android studio. User will take turn guessing a charater or sentence. Each wrong guess will result a man getting drawn. The game is made off android studio and it used file input to get random words.
 							</div>
+							<br >
+
+							<div class ="projectImg">
+								<img src="img/hangmanImg.png" alt="hangmanImg">
+							</div>
+
 
 							 <div class ="projectType">
-								<span class ="schoolColor">(School project)</span> - Dec 2016
-
-								 <div class ="linkToProject">
-
-								 	<!-- https://github.com/VickelLeung/TicTacToe_2.0_Android -->
-
-								 </div>
+							 	<span class ="personalColor">(Personal project)</span> - Jan 2018
 							 </div>
 
-						</div>
+							 <div class ="linkToProject">
+
+							 </div>
+
+						 </div>
+
 
 						<div class ="project2">
 
@@ -253,6 +256,7 @@
 								A simple tictactoe game made with android studio. There is two game wich are player vs player and player vs computer. The AI prevent the player from winning, the best case is a draw.
 								 <br >
 							</div>
+							<br >
 
 							<div class ="projectImg">
 								<img src="img/tictactoeMain.png" alt="tictactoeImg">
@@ -268,7 +272,62 @@
 
 						</div>
 
+
 						<div class ="project3"> 
+
+							<div class ="projectTitle">
+							 	<h3>
+							 		Risk 
+							 			<a href="https://github.com/VickelLeung/Risk-game" target="_blanc">
+											<img src ="img/project_Github.png" alt ="githubCat">
+										</a>  
+							 	</h3> 
+							</div>
+							<div class="projectDescription">
+							A game made out of pure C++ which is run on the console. The project was done in with 4 teamate. Design pattern was used during the creation of this game.
+							</div>
+							<br >
+
+							<div class ="projectImg">
+								<img src="img/riskImg.jpg" alt="riskImg">
+							</div>
+
+
+							 <div class ="projectType">
+							 	<span class ="schoolColor">(School project)</span> - Dec 2017
+							 </div>
+
+							 <div class ="linkToProject">
+
+							 </div>
+						</div>
+
+						<div class ="project4"> 
+
+							<div class ="projectTitle">
+							 	<h3> 
+							 		Refugee Camp - Web application storing information
+							 		<a href="https://github.com/VickelLeung/PixelPenguins" target="_blanc">
+										<img src ="img/project_Github.png" alt ="githubCat">
+									</a>  
+							 	</h3> 
+							</div>
+							<div class="projectDescription">
+								A web application made with a team of 6 person. The main goal of the web application is to stored information fast and easy.
+							</div>
+							<br >
+
+							<div class ="projectImg">
+								<img src="img/pixelPenguins.png" alt="pixelPengImg">
+							</div>
+
+							 <div class ="projectType">
+							 	<span class ="personalColor">(hackathon project)</span> - Nov 2017
+							 </div>
+
+						</div>
+
+						<div class ="project5"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -300,91 +359,38 @@
 
 						</div>
 
-						<div class ="project4"> 
-
-							<div class ="projectTitle">
-							 	<h3>
-							 		Hangman 
-							 		<!-- Review Link -->
-							 			<a href="https://github.com/VickelLeung/Hangman_2.0_Android" target="_blanc">
-										
-												<img src ="img/project_Github.png" alt ="githubCat">
-										</a>   
-							 	</h3> 
-							</div>
-							<div class="projectDescription">
-								A game of hangman made using android studio. User will take turn guessing a charater or sentence. Each wrong guess will result a man getting drawn. The game is made off android studio and it used file input to get random words.
-							</div>
-							<br >
-
-							<div class ="projectImg">
-								
-							</div>
-
-
-							 <div class ="projectType">
-							 	<span class ="personalColor">(Personal project)</span> - Jan 2018
-							 </div>
-
-							 <div class ="linkToProject">
-
-							 </div>
-
-						 </div>
-
-						<div class ="project5"> 
-
-							<div class ="projectTitle">
-							 	<h3>
-							 		Risk 
-							 			<a href="https://github.com/VickelLeung/Risk-game" target="_blanc">
-											<img src ="img/project_Github.png" alt ="githubCat">
-										</a>  
-							 	</h3> 
-							</div>
-							<div class="projectDescription">
-							A game made out of pure C++ which is run on the console. The project was done in with 4 teamate. Design pattern was used during the creation of this game.
-							</div>
-							<br >
-
-							<div class ="projectImg">
-								<img src="img/riskImg.jpg" alt="riskImg">
-							</div>
-
-
-							 <div class ="projectType">
-							 	<span class ="schoolColor">(School project)</span> - Dec 2017
-							 </div>
-
-							 <div class ="linkToProject">
-
-							 </div>
-						</div>
 
 						<div class ="project6"> 
-
 							<div class ="projectTitle">
-							 	<h3> 
-							 		Refugee Camp - Web application storing information
-							 		<a href="https://github.com/VickelLeung/PixelPenguins" target="_blanc">
+							 <h3>
+							 	Battleship 
+							 		<a href="https://github.com/VickelLeung/Battleship-School-project-" target="_blanc">
 										<img src ="img/project_Github.png" alt ="githubCat">
 									</a>  
-							 	</h3> 
-							</div>
-							<div class="projectDescription">
-								A web application made with a team of 6 person. The main goal of the web application is to stored information fast and easy.
-							</div>
-							<br >
+							 </h3>
 
-							<div class ="projectImg">
-								<img src="img/pixelPenguins.png" alt="pixelPengImg">
+							 </div>
+							 <div class="projectDescription">
+							A game of battleship where each player take turn firing a rocket to sink the opponent ship. The game was implemented using java, and it ran on the console.
+							</div>
+							 <br >
+
+							 <div class ="projectImg">
+							 	<img src="img/Battle_Ship_Img.png" alt="shipImg">
 							</div>
 
 							 <div class ="projectType">
-							 	<span class ="personalColor">(hackathon project)</span> - Nov 2017
+								<span class ="schoolColor">(School project)</span> - Dec 2016
+
+								 <div class ="linkToProject">
+
+								 	<!-- https://github.com/VickelLeung/TicTacToe_2.0_Android -->
+
+								 </div>
 							 </div>
 
 						</div>
+
 						<br ><br >
 						<a class ="projectLink" href="project">View all my projects</a>
 				</div>		
@@ -464,14 +470,14 @@
 		    					<label for="phone"></label>
 		    					<input type="tel" id="phoneNumber" name="phone" placeholder="Phone Number">
 		    					<br >
-		    					<label for="email"><span class = "red">*</span></label>
-		    					<input type="email" id="emailAddress" name="email" placeholder="Email Address">
+		    					<label for="email"></label>
+		    					<input type="email" id="emailAddress" name="email" placeholder="Email Address"><span class = "red">*</span>
 		    					<br >
-		    					<label for="message"><span class = "red">*</span></label>
-		   						 <textarea id="message" name="message" placeholder="Message"></textarea>
+		    					<label for="message"></label>
+		   						 <textarea id="message" name="message" placeholder="Message"></textarea><span class = "red">*</span>
 		   							
-		   						<p><span class = "red">*</span>Indicates required field</p>
-		   						 <br >
+		   						<p>Required field <span class = "red">*</span></p>
+		   					
 
 		   						<input type="submit" name="submit" value="Send">
 		   						<input type ="reset" value="Clear" >

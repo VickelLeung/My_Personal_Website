@@ -56,7 +56,8 @@ body, html{
   text-align: right;
   padding-bottom: 15px;
   padding-top: 15px;
-  
+  font-size: 20px;
+  font-weight: bolder;
   /*position: -webkit-sticky;
   position: sticky; */
   position: sticky;
@@ -738,7 +739,7 @@ translateY(1800px);
   /*margin:0;*/
 	/*width: 30%;*/
 	/*padding: 40px;*/
-
+  text-align: left;
   /*border: 2px solid black;*/
   border-radius: 25px;
   display: inline-block;
@@ -818,11 +819,26 @@ translateY(1800px);
 #contact textarea {
 
   padding:10px;
+  margin:10px;
+  /*text-align: left;*/
 }
 
-/*#contact{
- padding:5px;
-}*/
+#contact input[type="submit"], input[type="reset"] {
+  font-size: 15px;
+  font-weight: bolder;
+  width:40%;
+  padding:10px;
+  background-color: #272326;
+  color:white;
+  border: 3px solid #272326;
+}
+
+#contact input[type="submit"]:hover, input[type="reset"]:hover{
+  background-color: #EEEDEC;
+  color:black;
+  border: 3px solid #272326;
+}
+
 
 
 
@@ -914,6 +930,7 @@ translateY(1800px);
 .navWrapper{
   position:relative;
   border:2px solid white;
+  opacity: 1;
 }
 
 .contentAbout{
