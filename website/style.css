@@ -92,7 +92,9 @@ a {
 }
 
 .logo{
+  position:absolute;
   text-align: left;
+  bottom:0px;
 }
 
 
@@ -497,7 +499,9 @@ translateY(1800px);
 .linkToMedia{
 	position: relative;
 	margin-top: -15px;
+
 }
+
 
 .linkBox{
 	padding: 1%;
@@ -862,7 +866,7 @@ translateY(1800px);
 
 .projectIntro{
   position:relative;
-  background-color: gray;
+  background: #E8E8E8;
   color:black;
   text-align: center;
   border:0.5px solid gray;
@@ -873,8 +877,8 @@ translateY(1800px);
 	position:relative;
 	border:0.5px solid gray;
 	/*height:80%;*/
-	background-color: #E8E8E8;
-	color:black;
+	background: #F5F5F5;
+  color:black;
   text-align: center;
 }
 
@@ -884,7 +888,7 @@ translateY(1800px);
 	color:black;
 	border: 0.5px solid #B0B0B0;
 	/*height:350px;*/
-	background-color: #B0B0B0;
+	background: #E8E8E8;
   text-align: center;
 }
 
@@ -1034,6 +1038,7 @@ translateY(1800px);
 .java1:hover, .java2:hover , .java3:hover, .java4:hover , .java5:hover{
 
 	filter: brightness(50%);
+  transform: scale(1.2);
 	/*border: 2px solid pink;*/
   /*visibility: visible;*/
 }
