@@ -117,7 +117,7 @@ a {
 }
 
 .introWrapper{
-	height: 425%;
+	height: 390%;
   /*border: 2px solid lime;*/
 }
 
@@ -131,11 +131,13 @@ a {
 .png1{
 	background-image:url('img/image2.jpeg'); 
 	position:absolute;
-	top: 200px;
-	width: 98%;
-	min-height: 65%;
-	border: 5px solid #8f949a;
-  	left: 8px;
+	/*top: 200px;*/
+  top:10%;
+	width: 99.9%;
+	/*height:99.5%;*/
+  min-height: 88%;
+
+  	/*left: 8px;*/
 }
 
 .proSect1{
@@ -206,11 +208,10 @@ span.bold{
   font-weight: 300;
   font-size: 35px;
   letter-spacing: 3px;
-
- /* background: -webkit-linear-gradient(black, #242427);
+   /* background: -webkit-linear-gradient(black, #242427);
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;*/
-  padding: 0px;
+  padding: 3.5%;
   margin: 0px;
   word-break: break-all;
 }
