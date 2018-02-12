@@ -141,25 +141,36 @@ a {
 }
 
 .proSect1{
-
+  top:-3%;
 	background-image: url("img/bgComp1.jpg");
-	min-height: 35%;
-	height: 425px;
-	margin: 45px;
+	min-height: 90%;
+   /*filter: grayscale(100%);*/
+   /*filter: brightness(80%);*/
+	/*height: 425px;*/
+	/*margin: 45px;*/
 	font-weight:bold;
-	border: 5px solid white;
+	/*border: 5px solid white;*/
 }
 
 .proSect2{
 	background-image: url("img/city.jpg");
-	height:550px;
+	/*height:550px;*/
+  min-height: 100%;
+}
+
+.aboutWrapper{
+
+  height:370%;
+
 }
 
 .proSect3{
+  top:-3%;
 	background-image: url('img/room.jpg');
-	min-height: 35%;
-	height: 400px;
-	margin: 45px;
+	min-height: 95%;
+  padding: 8%;
+	/*height: 400px;*/
+	/*margin: 45px;*/
 	font-weight:bold;
 	border: 5px solid white;
 
@@ -588,8 +599,6 @@ translateY(1800px);
    /*border: 3px solid violet;*/
 }
 
-
-
 .projectDiv {
 	position: relative;
    /*border: 5px solid green;*/
@@ -620,11 +629,18 @@ translateY(1800px);
 
 .titleFont{
 	/*position:relative;*/
-  top:0%;
+  /*top:0%;*/
 	/*left:43%;*/
+  color: black;
 	font-weight: bold;
 	font-size: 30px;
   text-align: center;
+}
+
+.text{
+
+  background: rgba(0, 0, 0, 0.6);
+
 }
 
 .textTitle{
@@ -845,31 +861,42 @@ translateY(1800px);
 }
 
 
-
-
 /*====================================== Project section ==================================================================*/
 
 .projectWrapper{
   /*height: 700px;*/
-  height:450%;
+  height:380%;
+}
+
+.projectMainTitle{
+
+   color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+.quotesContainer{
+  padding: 8%;
+  height: 150%;
 }
 
 .quotes{
   position: relative;
   top:30%;
 	text-align: center;
-	color: white;
+	  color:black;
 	font-weight:bold;
 	font-size: 26px;
 
-	background: rgba(0, 0, 0, 0.3);
-}
+	/*background: rgba(0, 0, 0, 0.3);
+*/}
 
 .projectIntro{
   position:relative;
   background: #E8E8E8;
   color:black;
   text-align: center;
+  padding: 2%;
   border:0.5px solid gray;
 }
 
@@ -902,7 +929,8 @@ translateY(1800px);
 	color:#006400;
 }
 
-.project1Done, .project2Done, .project3Done, .project4Done {
+.project1Done, .project2Done, .project3Done, .project4Done, .project5Done, 
+.project6Done, .project7Done {
 	text-align: center;
 	border: 2px solid gray;
 	border-radius: 25px;
