@@ -14,9 +14,9 @@
 		<link rel ="shortcut icon" type="image/png" href="favicon.png"/>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+	<script src="script.js"></script>
 	 <script>
-	    $(document).ready(function(){ 
+	    $(document).ready(function(){
 	    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
 	   }); 
 	</script>
@@ -25,27 +25,29 @@
 	
 <body>
 	<div class ="projectWrapper">
-		<div>
-			<ul class ="nav">
-				<li>
-				 <a class ="custom-btn btn-12" id = "btnPersonal" href ="AboutMe"> About Me</a> 
-				</li>
-				
-				<li> 
-					<a class ="custom-btn btn-12" id = "btnTeach" href ="teaching"> Teaching materials</a> 
-				</li>
-
-				<li> 
-					<a class ="custom-btn btn-12" id = "idContact" href ="index"> Home
-					</a>
-				 </li>
-			</ul>
-		</div>
 		<!-- ============= start of main part==================== -->
 		
 
 	<div class ="proSect1">
-		
+		<div id="up">
+			<a href="up"></a>
+		</div>
+
+		<nav>
+		  <ul>
+		  	<li>
+		      <a href="index">Home</a>
+		    </li>
+		    <li>
+		    <li>
+		      <a href="AboutMe">About me</a>
+		    </li>
+		    <li>
+		      <a href="teaching">teaching</a>
+		    </li>
+		  </ul>
+		</nav>
+
 		<!-- <div class = "titleText"> -->
 				
 				<!-- <a href="https://github.com/VickelLeung"><img src = "https://s17.postimg.org/myxavov0f/Git_Hub-_Mark-_Light-64px.png">
@@ -304,7 +306,7 @@
 			</div>
 
 		
-		
+		<a id ="btnUp" href ="#up"> <img src ="https://s9.postimg.org/v2busl0lb/up_Arrow.png"></a>
 	</div>
 	<!-- ============= end of main part==================== -->
 	

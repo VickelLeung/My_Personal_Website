@@ -16,92 +16,16 @@
 			<link rel ="shortcut icon" type="image/png" href="turtle1.png"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
 
 				<!-- remove branding -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		 <script>
 		    $(document).ready(function(){ 
 		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
-		   }); 
-		</script>
-		
-		<script>
-
-			//for scroll up botton
-			window.onscroll = function() {scrollFunction()};
-
-				function scrollFunction() {
-				    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-				        document.getElementById("btnUp").style.display = "block";
-				    } else {
-				        document.getElementById("btnUp").style.display = "none";
-				    }
-				}
-
-				$(document).ready(function(){
-			  // Add smooth scrolling to all links
-			  $("#btnUp").on('click', function(event) {
-
-			    // Make sure this.hash has a value before overriding default behavior
-			    if (this.hash !== "") {
-			      // Prevent default anchor click behavior
-			      event.preventDefault();
-
-			      // Store hash
-			      var hash = this.hash;
-
-			      // Using jQuery's animate() method to add smooth page scroll
-			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			      $('html, body').animate({
-			        scrollTop: $(hash).offset().top
-			      }, 2200, function(){
-			   
-			        // Add hash (#) to URL when done scrolling (default click behavior)
-			        window.location.hash = hash;
-			      });
-			    } // End if
-			  });
-			});
-
-			//end of scroll up
-
-			//for contact page
-			$(document).ready(function(){
-			  // Add smooth scrolling to all links
-			  $("#idContact").on('click', function(event) {
-
-			    // Make sure this.hash has a value before overriding default behavior
-			    if (this.hash !== "") {
-			      // Prevent default anchor click behavior
-			      event.preventDefault();
-
-			      // Store hash
-			      var hash = this.hash;
-
-			      // Using jQuery's animate() method to add smooth page scroll
-			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			      $('html, body').animate({
-			        scrollTop: $(hash).offset().top
-			      }, 3200, function(){
-			   
-			        // Add hash (#) to URL when done scrolling (default click behavior)
-			        window.location.hash = hash;
-			      });
-			    } // End if
-			  });
-			});
-
-			//for preloader - add class	
-			$(document).ready(function() {
-				
-				setTimeout(function(){
-					$('body').addClass('loaded');
-				}, 3500);
-				
-			});
+		   });
 
 		</script>
-
 	</head>
 	
 <body>
@@ -112,18 +36,7 @@
 
 	<div class ="introWrapper">
 
-			<ul class ="nav">
-				<!-- <div class ="logo">
-					<img src ="img/logo.png">
-				</div> -->
-				<li> 
-					<a class ="custom-btn btn-12"  href ="project"> Projects</a>
-				</li>
-				<li> <a class ="custom-btn btn-12" id = "btnPersonal" href ="AboutMe"> About Me</a> </li>
-  				<li> <a class ="custom-btn btn-12" id = "btnTeach" href ="teaching"> Teaching materials</a> </li>
-  				<li> <a class ="custom-btn btn-12" id = "idContact" href ="#bottom"> Hire me</a> </li>
-	
-				<!-- ======================== Preloader ======================= -->
+			<!-- ======================== Preloader ======================= -->
 				<div id="loader-wrapper">
 							<p> Loading...</p>
 							<div id="loader"></div>
@@ -131,18 +44,30 @@
 							<div class="loader-section section-left"></div>
 				            <div class="loader-section section-right"></div>
 				</div>
-			</ul>
 
 		<div id ="starBg">
-			
-
-
 		
-
 		<!-- ============= start of main part==================== -->
 
 
 		<div class = "png1">
+
+				<nav>
+				  <ul>
+				    <li>
+				      <a href="AboutMe">About me</a>
+				    </li>
+				    <li>
+				      <a href="project">Projects</a>
+				    </li>
+				    <li>
+				      <a href="teaching">teaching</a>
+				    </li>
+				     <li>
+				      <a href="#bottom" id="goToContact">Hire me</a>
+				    </li>
+				  </ul>
+				</nav>	
 
 		<div class ="titleText">
 			<span class ="myName">Vickel Leung</span>
@@ -497,7 +422,7 @@
 		</div>
 </div>
 		<div class ="footer">
-				<p> 2018 © All Rights Reserved | Privacy Policy | made with pure ♥ by Vickel</p>
+			<p> 2018 © All Rights Reserved | Privacy Policy | made with pure <a href ="https://www.youtube.com/watch?v=KxGRhd_iWuE">♥</a> by Vickel </p>
 		</div>
 		<!-- ============= end of main part==================== -->
 	

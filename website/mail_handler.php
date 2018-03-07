@@ -1,3 +1,4 @@
+
 <?php
 	if(isset($_POST['submit'])){
 		$name=$_POST['name'];
@@ -11,7 +12,10 @@
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-			echo "<h1>Your email was Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
+			echo '<meta http-equiv="refresh" content="5;url=http://www.vickelleung.com">'; 
+			echo "<h1>Your email was Sent Successfully! Thank you"." ".$name.", We will contact you shortly, the page will redirect to homepage within 5 seconds!</h1>";
+			echo '<img src="img/tybye.jpg">';
+			
 
 		}
 		else{

@@ -14,6 +14,7 @@
 		<link rel ="shortcut icon" type="image/png" href="favicon.png"/>	
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
 
 		<script>
 		    $(document).ready(function(){ 
@@ -25,32 +26,33 @@
 	
 	<body>
 	<div class ="teachIntoWrapper">
-
-		<ul class ="nav">
-			<li>
-			 <a class ="custom-btn btn-12" id = "btnPersonal" href ="AboutMe"> About Me</a> 
-			</li>
-
-			<li> 
-				<a class ="custom-btn btn-12"  href ="project"> Projects</a>
-			</li>
 		
-			<li> 
-				<a class ="custom-btn btn-12" id = "idContact" href ="index"> Home
-				</a>
-			 </li>
-		</ul>
-
 		<div class ="proSect3">	
-			<span class ="titleFont">Teaching Materials</span>	
-			<div class ="quotes">
-				<p>"Teaching is the highest form of understanding." <br ><br > - Aristotle</p>
-			</div>
+		<div id="up">
+			<a href="up"></a>
+		</div>
+		<nav>
+		  <ul>
+		  	<li>
+		      <a href="index">Home</a>
+		    </li>
+		    <li>
+		    <li>
+		      <a href="AboutMe">About me</a>
+		    </li>
+		    <li>
+		      <a href="project">Projects</a>
+		    </li>
+		  </ul>
+		</nav>	
+				<div class ="quotes">
+					<span class ="titleTeachFont">Teaching Materials</span>	
+					<p>"Teaching is the highest form of understanding." <br ><br > - Aristotle</p>
+				</div>
 		</div>	
 	</div>
 
 		<div class ="teachWrapper">
-
 			<div class ="teachingMaterials">
 				<h2>My personal notes</h2>
 				<p>Below are my personal notes that I created during my school year that I used to tutor friends and people in need! Feel free to download my notes.</p>
@@ -123,6 +125,8 @@
 			<p class = "courseDescription">Are you currently taking computer science/software engineer Course at concordia? You are in luck, click on the link below to get a google drive of all course I've taken.
 			</p>
 			<a class ="googleLink" href="https://drive.google.com/open?id=0B8a2R11fK-RoT3djcms2VXFkUWc">View all my courses</a>
+
+			<a id ="btnUp" href ="#up"> <img src ="https://s9.postimg.org/v2busl0lb/up_Arrow.png"></a>
 		</div>
 
 	<div class ="footer">
