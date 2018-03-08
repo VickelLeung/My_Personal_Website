@@ -13,17 +13,18 @@
 				Vickel Leung
 			</title>
 			<link rel ="stylesheet" type ="text/css" href ="style.css">
+			<link rel ="stylesheet" type ="text/css" href ="aos.css">
 			<link rel ="shortcut icon" type="image/png" href="turtle1.png"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="script.js"></script>
-
 				<!-- remove branding -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		 <script>
 		    $(document).ready(function(){ 
 		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
 		   });
+
 
 		</script>
 	</head>
@@ -71,13 +72,14 @@
 
 		<div class ="titleText">
 			<span class ="myName">Vickel Leung</span>
+
 			<p >web & android developer</p>
 
 				<div class ="linkToMedia">
-					<a href="https://github.com/VickelLeung">
+					<a href="https://github.com/VickelLeung" id ="mainGithub">
 						<img src="img/githubMed.png" alt="githubMed">
 					</a> 
-					<a href="https://www.linkedin.com/in/vickelLeung">
+					<a href="https://www.linkedin.com/in/vickelLeung" id ="mainLinked">
 						<img src = "img/mainLinkedin.png" alt="linkedImg">
 					</a> 
 				</div>
@@ -116,7 +118,9 @@
 								<span>(Click on <img src ="img/project_Github.png" alt ="githubCat")> or images for source code)</span>
 						</h6> 
 					
-						<div class ="project1"> 
+
+
+						<div class ="project1" data-aos="zoom-out" data-aos-duration="1600"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -151,7 +155,7 @@
 						 </div>
 
 
-						<div class ="project2">
+						<div class ="project2" data-aos="zoom-in" data-aos-duration="1600">
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -199,7 +203,7 @@
 						</div>
 
 
-						<div class ="project3"> 
+						<div class ="project3" data-aos="zoom-out" data-aos-duration="1600"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -230,7 +234,7 @@
 							 </div>
 						</div>
 
-						<div class ="project4"> 
+						<div class ="project4" data-aos="zoom-in" data-aos-duration="1600"> 
 
 							<div class ="projectTitle">
 							 	<h3> 
@@ -257,7 +261,7 @@
 
 						</div>
 
-						<div class ="project5"> 
+						<div class ="project5" data-aos="zoom-out" data-aos-duration="1600"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -291,7 +295,7 @@
 						</div>
 
 
-						<div class ="project6"> 
+						<div class ="project6" data-aos="zoom-in" data-aos-duration="1600"> 
 							<div class ="projectTitle">
 							 <h3>
 							 	Battleship 
@@ -343,11 +347,11 @@
 				</div>
 			</div>			
 
-	<div class ="contactDiv">	
+	<div class ="contactDiv" >	
 			<div id="bottom"><a href="bottom"></a></div>
 				<h6><span class ="titleFont">How to contact me</span></h6>
 
-					<div class= "infoContact">
+					<div class= "infoContact" data-aos="fade-right" data-aos-duration="1800">
 							
 						<div class ="whoIam">
 							<div class ="myDescription">
@@ -361,7 +365,7 @@
 						</div>
 						<br >
 
-						<div class ="contactMe">
+						<div class ="contactMe" >
 							
 								<div class= "myEmail">
 									<a href="mailto:vickelleung@gmail.com"> 
@@ -393,7 +397,7 @@
 							</div>		
 					</div>
 
-				<div class = "messageContact">
+				<div class = "messageContact" data-aos="fade-left" data-aos-duration="1800">
 						<span>Got a message, comment or feedback?</span>
 						<div class="contactForm">
 							<form id="contact" action="mail_handler.php" method="post" name="form" >
@@ -404,10 +408,10 @@
 		    					<input type="tel" id="phoneNumber" name="phone" placeholder="Phone Number">
 		    					<br >
 		    					<label for="email"></label>
-		    					<input type="email" id="emailAddress" name="email" placeholder="Email Address"><span class = "red">*</span>
+		    					<input type="email" id="emailAddress" name="email" placeholder="Email Address" required><span class = "red">*</span>
 		    					<br >
 		    					<label for="message"></label>
-		   						 <textarea id="message" name="message" placeholder="Message"></textarea><span class = "red">*</span>
+		   						 <textarea id="message" name="message" placeholder="Message" required></textarea><span class = "red">*</span>
 		   							
 		   						<p>Required field <span class = "red">*</span></p>
 		   					
@@ -426,6 +430,11 @@
 		</div>
 		<!-- ============= end of main part==================== -->
 	
+	<script type="text/javascript" src="aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
+
 </body>
 	
 </html>
