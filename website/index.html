@@ -24,8 +24,6 @@
 		    $(document).ready(function(){ 
 		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
 		   });
-
-
 		</script>
 	</head>
 	
@@ -87,12 +85,13 @@
 
 			<div class ="ptext">
 				<span class = "border">
-					<h2>
-						<p>
+					<h1>
+						<div class="text"></div>
+						<!-- <p>
 						"Life is like riding a bicycle. To keep your balance you must keep moving."
 						<br><br>– Albert Einstein
-						</p>
-					</h2>
+						</p> -->
+					</h1>
 					<br > <br >
 					<a class ="linkBox" href="AboutMe">Learn more about me</a>
 				</span>
@@ -120,7 +119,7 @@
 					
 
 
-						<div class ="project1" data-aos="zoom-out" data-aos-duration="1600"> 
+						<div class ="project1" data-aos="zoom-out" data-aos-duration="1600" data-aos-delay="150"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -155,7 +154,7 @@
 						 </div>
 
 
-						<div class ="project2" data-aos="zoom-in" data-aos-duration="1600">
+						<div class ="project2" data-aos="zoom-out" data-aos-duration="1600" data-aos-delay="400">
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -203,7 +202,7 @@
 						</div>
 
 
-						<div class ="project3" data-aos="zoom-out" data-aos-duration="1600"> 
+						<div class ="project3" data-aos="zoom-out" data-aos-duration="1600" data-aos-delay="150"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -234,7 +233,7 @@
 							 </div>
 						</div>
 
-						<div class ="project4" data-aos="zoom-in" data-aos-duration="1600"> 
+						<div class ="project4" data-aos="zoom-out" data-aos-duration="1600" data-aos-delay="400"> 
 
 							<div class ="projectTitle">
 							 	<h3> 
@@ -261,7 +260,7 @@
 
 						</div>
 
-						<div class ="project5" data-aos="zoom-out" data-aos-duration="1600"> 
+						<div class ="project5" data-aos="zoom-out" data-aos-duration="1600" data-aos-delay="150"> 
 
 							<div class ="projectTitle">
 							 	<h3>
@@ -295,7 +294,7 @@
 						</div>
 
 
-						<div class ="project6" data-aos="zoom-in" data-aos-duration="1600"> 
+						<div class ="project6" data-aos="zoom-out" data-aos-duration="1600" data-aos-delay="400"> 
 							<div class ="projectTitle">
 							 <h3>
 							 	Battleship 
@@ -426,13 +425,100 @@
 		</div>
 </div>
 		<div class ="footer">
-			<p> 2018 © All Rights Reserved | Privacy Policy | made with pure <a href ="https://www.youtube.com/watch?v=KxGRhd_iWuE">♥</a> by Vickel </p>
+			<p> <span id ="date">2018 id ="date"</span> © All Rights Reserved | Privacy Policy | made with pure <a href ="https://www.youtube.com/watch?v=KxGRhd_iWuE">♥</a> by Vickel </p>
 		</div>
 		<!-- ============= end of main part==================== -->
 	
 	<script type="text/javascript" src="aos.js"></script>
 	<script>
 	AOS.init();
+	
+  // document.write(new Date().getFullYear());
+
+
+
+	// quote animations
+	// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
+
+class TextScramble {
+  constructor(el) {
+    this.el = el
+    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
+const phrases = [
+  'Life is like riding a bicycle.',
+  'To keep your balance',
+  'you must keep moving.',
+  '- Albert Einstein'
+]
+
+const el = document.querySelector('.text')
+const fx = new TextScramble(el)
+
+let counter = 0
+const next = () => {
+  fx.setText(phrases[counter]).then(() => {
+    setTimeout(next, 2800)
+  })
+  counter = (counter + 1) % phrases.length
+}
+
+next()
+
 	</script>
 
 </body>

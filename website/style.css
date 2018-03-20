@@ -13,6 +13,7 @@ body, html{
   font-weight: 400;
   line-height: 1.8em;
   color: white;
+  background-color: white;
   /*background: -webkit-linear-gradient(to right, #485563, #29323c); */
   /* Chrome 10-25, Safari 5.1-6 */
   /*background: linear-gradient(to right, #485563, #29323c);*/
@@ -152,11 +153,24 @@ a {
   /*border: 2px solid lime;*/
 }
 
-/*#btnIndex: hover > .png1{
+/*================quote animation=============*/
 
-  background-image:url('https://hdwallsource.com/img/2014/8/awesome-scenery-pictures-18783-19263-hd-wallpapers.jpg'); 
+/*.container{
+  height 100%
+  width 100%
+  justify-content center
+  align-items center
+  display flex
 }
-*/
+.text{
+  font-weight 100
+  font-size 28px
+  color #FAFAFA
+}*/
+
+/*============================================*/
+
+
 /* ==================image================== */
 
 .png1{
@@ -173,9 +187,8 @@ a {
 }
 
 .proSect1{
-  top:-3%;
   background-image: url("img/silly.jpg");
-  min-height: 80%;
+  min-height: 100%;
   border:0.1px solid black;
    /*filter: grayscale(100%);*/
    /*filter: brightness(80%);*/
@@ -525,7 +538,7 @@ translateY(1800px);
   border-radius: 25px;
   display: inline-block;
   width:45%;
-  
+  vertical-align:top;
   margin: 20px;
   background-color: #A9A9A9;
 }
@@ -621,7 +634,6 @@ translateY(1800px);
   border: 1px solid #EEEDEC;
   background-color: #EEEDEC;
   z-index: 1px;
-  
 
 }
 
@@ -674,8 +686,6 @@ translateY(1800px);
   margin: 2;
   margin-bottom: 2%;
   /*background-color: #A9A9A9;*/
-
-
 
 }
 
@@ -779,20 +789,18 @@ translateY(1800px);
 }
 
 .quotesContainer{
-  padding: 8%;
+  /*padding: 8%;*/
   height: 150%;
 }
 
 .quotes{
   position: relative;
-  top:30%;
+  padding:2.5%;
   text-align: center;
-    color: ivory;
+  color: ivory;
   font-weight:bold;
   font-size: 26px;
-
-  /*background: rgba(0, 0, 0, 0.3);
-*/}
+ }
 
 .projectIntro{
   position:relative;
@@ -838,6 +846,7 @@ translateY(1800px);
   border: 2px solid gray;
   border-radius: 25px;
   display: inline-block;
+  vertical-align: top;
   width:46%;
   /*height: 36%;*/
   margin: 20px;
@@ -861,6 +870,10 @@ translateY(1800px);
 }
 
 /*==================================== About me =============================================================*/
+
+#myParagraph{
+      display: none;
+}
 
 .navWrapper{
   position:relative;
