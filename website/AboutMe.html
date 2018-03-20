@@ -3,6 +3,11 @@
 <html lang= "en">
 
 	<head>
+			<!-- for mobile conversion -->	
+			<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<meta name="HandheldFriendly" content="true">
+
 			<meta charset = "utf-8">
 			<meta name ="author" content ="Vickel Leung">
 			<meta name="description" content="A simple human that enjoy making apps/website.">
@@ -15,13 +20,12 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="script.js"></script>
-
-		<script>
-		    $(document).ready(function(){ 
-		    $('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
-		   }); 
-		</script>
-
+				<!-- remove branding -->
+		<script src="removeBranding.js"></script>
+		<script src="updateYear.js"></script>
+		<script>	
+ //auto update year
+	document.getElementById('date').innerHTML = (new Date()).getFullYear();</script>
 	</head>
 
 <body>
@@ -180,9 +184,10 @@
 	</div>
 
 		<div class ="footer">
-			<p> 2018 © All Rights Reserved | Privacy Policy | made with pure <a href ="https://www.youtube.com/watch?v=s0JD8pOgD1s">♥</a> by Vickel </p>
+			<p> <span id ="date"></span> © All Rights Reserved | Privacy Policy | made with pure <a href ="https://www.youtube.com/watch?v=s0JD8pOgD1s">♥</a> by Vickel </p>
 		</div>
 
+		<script type="text/javascript" src="updateYear.js"></script>
 
 <script>
  //      $.chain = function() {
