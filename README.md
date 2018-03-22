@@ -10,4 +10,4 @@ The website has 3 pages;
 <br >
 The website was built using html, css, javascript and php.
 
-[link to my personal website](https://www.vickelleung.com)
+[link to my personal website](http://vickelleung.com)
