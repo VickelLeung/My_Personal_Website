@@ -9,3 +9,5 @@ The website has 3 pages;
 3-Teaching materials: A page that has resources for all teaching materials that I use for mentoring students. <br >
 <br >
 The website was built using html, css, javascript and php.
+
+[link to my personal website](https://www.vickelleung.com)
